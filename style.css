@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    font-family: Roboto, sans-serif;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -12,21 +12,21 @@ body {
 /* --------------------------------------------------- */
 
 /* STYLE */
-.header, .hero, .footer {
-    background: #1f2937;
+.header, .hero {
+    background: #fff;
 }
 /* --------------------------------------------------- */
 
 /* HEADER STYLE */
 .logo {
-    font-size: 24px;
-    color: #f9faf8;
+    
+    width: 16px;
+    height: auto;
 }
-/* --------------------------------------------------- */
 
 a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #000;
 }
 
 ul {
@@ -36,50 +36,52 @@ ul {
 /* --------------------------------------------------- */
 
 /* HERO STYLE */
-h1 {
+.hero-title {
     font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
 }
 
-.hero-p {
+.hero-txt {
     font-size: 18px;
-    color: #e5e7eb;
+    font-weight: 400;
+    color: #fff;
 }
 
 .button {
     color: #fff;
     border: 0;
     border-radius: 5px;
-    background: #3882f6;
+    background: linear-gradient(to bottom, #e51d22, #c61a1c) ;
     cursor: pointer;
     padding: 10px 30px;
     font-size: 18px;
 }
 
 .hero-img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 /* --------------------------------------------------- */
 
 /* INFORMATION STYLE */
-h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #1f2937;
+.info-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(187, 188, 188);
 }
 
 .info-img {
-    /* max-width: 150px; */
-    /* height: auto; */
-    border: 4px solid #3882f6;
+    height: auto;
+    width: 200px;
+    border: 4px solid #e51d22;
     border-radius: 10px;
 }
 
 .info-text {
     font-size: 18px;
-    color: #4b5564;
+    color: #000;
     
 }
 /* --------------------------------------------------- */
@@ -88,7 +90,7 @@ h2 {
 .quote {
     background: #e5e7eb;
     font-weight: 300;
-    color: #1f2937;
+    color: #000;
 }
 
 
@@ -102,14 +104,19 @@ h2 {
 /* --------------------------------------------------- */
 
 /* CALL TO ACTION STYLE */
+.call-to-action {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
 .cta-container {
-    background-color: #3882f6;
+    background-color: #e51d22;
     border-radius: 15px;
 }
 
 .cta-p1 {
     font-size: 24px;
-    color: #f9faf8;
+    color: #fff;
 }
 
 .cta-p2 {
@@ -121,7 +128,7 @@ h2 {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
-    background: #3882f6;
+    background: linear-gradient(to bottom, #e51d22, #c61a1c) ;
     cursor: pointer;
     padding: 10px 30px;
     font-size: 18px;
@@ -130,7 +137,8 @@ h2 {
 
 /* FOOTER STYLE */
 .footer {
-    color: #e5e7eb;
+    color: #ffffff;
+    background: #000000;
 }
 /* --------------------------------------------------- */
 
@@ -148,6 +156,7 @@ h2 {
 /* HEADER BODY */
 .header {
     padding: 0 10%;
+    padding-top: 16px;
 }
 
 .header-container {
@@ -166,24 +175,49 @@ ul {
 
 /* HERO BODY */
 .hero {
-    padding: 5% 10%;
-}
-
-.hero-columns {
-    gap: 5%;
+    position: relative;
 }
 
 .hero-title {
-    margin: 0;
-    display: flex;
+    box-sizing: border-box;
+    letter-spacing: 0.8px;
+    line-height: 57.6px;
+    margin: 10px 0;
 }
 
-.hero-p {
+.hero-txt {
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+.hero-container {
+    position: relative;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-img {
-    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-align: left;
+}
+
+.button {
+    
+}
+
+.hero-title, .hero-p, .button {
+    margin: 0;
 }
 /* --------------------------------------------------- */
 
@@ -200,8 +234,12 @@ ul {
 }
 
 .info-title {
- margin: 0;
- padding-bottom: 2.5%;
+    margin: 0;
+    position: relative;
+    letter-spacing: 0.8px;
+    line-height: 40.96px;
+    text-size-adjust: 100%;
+    padding-bottom: 2.5%;
 }
 
 .items {
@@ -277,6 +315,10 @@ ul {
 .button-inverted {
     display: flex;
     flex-shrink: 0;
+}
+
+.button:hover, .button-inverted:hover {
+    background: #e33b3d;
 }
 /* --------------------------------------------------- */
 
